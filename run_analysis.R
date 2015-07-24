@@ -1,6 +1,6 @@
 ## R code to perform analysis of Samsung Wearable Device Data
 ## Assumes user has all needed data sets pre-loaded into environment with variable 
-## names equivalent to original text file name
+## names equivalent to original text file name without the .txt file endings
 
 
 totaltest <- cbind(subject_test,y_test,x_test)    ## Creates Total Test Data
