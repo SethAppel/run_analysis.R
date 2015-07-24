@@ -10,7 +10,18 @@ It then eliminates, via the Grep function, all columns that do not have data rel
 It then assigns descriptive names instead of numerals for activities and column titles.
 And finally it uses an aggregate function to create means for each subject and activity.
 
-
+Variable List:
+totaltest = combined table of all test data  (subject, activity and performance measures)
+totaltrain = combined table of all training data (subject, activity and performance measures)
+totaldata= combined table of totaltest and totaltrain
+features2=creates a simple vector of the various feature names to enable grep function
+columncut= a subsection of features that containt he words 'mean' 'Mean' or 'Std'
+columncut2= Same as columncut with addition of columns for subject and Activity vectors
+totaldata2= A subset of totaldata with only columns with data related to means or Std
+totaldata3= A copy of totaldata2 to enable renaming of activities with descriptive characters
+activitytitles= A character vector to contain activity titles
+columncutnames = Names for the subset of columnnames
+finaltidy = The final aggregated data set
 
 
 
